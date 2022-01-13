@@ -49,11 +49,12 @@ while i < amount:
     i = i+1
 
 newfull = []
-for array in full:
-    for i_row in range(array):
-        fullrow = []
-        for j in range(full)
-            fullrow.append(full[j][i_row])
-        newfull.append(fullrow)
+for i_row in range(len(array)):
+    fullrow = []
+    for j in range(len(full)):
+        fullrow += full[j][i_row]
+    newfull.append(fullrow)
 
-print(newfull)
+#generateFile(newfull)
+
+png.from_array([[0]*512]*512, 'L').save("logo.png")
